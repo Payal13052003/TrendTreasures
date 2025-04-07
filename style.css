@@ -1,0 +1,158 @@
+/* Body and Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Positions logo on left and nav on right */
+    align-items: center;
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fallback color */
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8; /* Gives a subtle overlay effect */
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.cta-button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+/* Categories Section */
+#categories {
+    padding: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+#categories h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.category-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Featured Products */
+#featured {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#featured h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product {
+    text-align: center;
+}
+
+.product img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
